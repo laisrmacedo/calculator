@@ -1,13 +1,15 @@
 import { StyleSheet } from "react-native"
 
 export const styles = StyleSheet.create({
-  container: {
+  button: {
     backgroundColor: '#000',
     height: 60,
-    width: 60,
+    width: '22%',
     borderRadius: 12,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    flexGrow: 1,
+    aspectRatio: 1 // Makes buttons square
   },
   label: {
     color: '#fff',

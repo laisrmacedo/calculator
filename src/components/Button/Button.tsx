@@ -9,11 +9,7 @@ interface Props {
 
 export default function Button({ label, type = "number", onPress }: Props) {
   return (
-    <TouchableOpacity
-      // style={[styles.container, type === "operator" && styles.operator]}
-      style={styles.container}
-      onPress={onPress}
-    >
+    <TouchableOpacity key={label} style={styles.button} onPress={() => onPress()}>
       <Text style={styles.label}>{label}</Text>
     </TouchableOpacity>
   );
